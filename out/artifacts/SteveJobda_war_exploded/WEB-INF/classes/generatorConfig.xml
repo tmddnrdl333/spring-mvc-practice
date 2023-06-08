@@ -4,7 +4,14 @@
 
 <generatorConfiguration>
     <properties resource="database_for_generator.properties"/>
-    <context id="context1" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+    <context id="context1" targetRuntime="MyBatis3">
+
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
+        <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+        <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+
         <jdbcConnection driverClass="${jdbc.driverClassName}" connectionURL="${jdbc.url}" userId="${jdbc.username}"
                         password="${jdbc.password}"/>
 
@@ -22,11 +29,11 @@
                 targetPackage="com.applemango.SteveJobda.persistence.mapper"
                 targetProject="/MIDASIT/SteveJobda/src/main/java" type="XMLMAPPER"/>
 
-        <table tableName="admin"/>
-        <table tableName="img"/>
-        <table tableName="posting"/>
-        <table tableName="auth"/>
-        <table tableName="admin_auth"/>
+        <table tableName="admin" domainObjectName="Admin"><property name="runtimeSchema" value=""/></table>
+        <table tableName="img" domainObjectName="Img"><property name="runtimeSchema" value=""/></table>
+        <table tableName="posting" domainObjectName="Posting"><property name="runtimeSchema" value=""/></table>
+        <table tableName="auth" domainObjectName="Auth"><property name="runtimeSchema" value=""/></table>
+        <table tableName="admin_auth" domainObjectName="AdminAuth"><property name="runtimeSchema" value=""/></table>
 
     </context>
 </generatorConfiguration>

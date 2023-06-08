@@ -2,6 +2,8 @@ package com.applemango.SteveJobda.service;
 
 import com.applemango.SteveJobda.domain.Admin;
 
+import java.util.List;
+
 public interface AdminService {
-    public Admin getAdminByAdminSn(Integer adminSn);
+    public List<Admin> getAllAdmins();
 }

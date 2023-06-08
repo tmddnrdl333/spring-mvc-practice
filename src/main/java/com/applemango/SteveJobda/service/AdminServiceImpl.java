@@ -5,6 +5,8 @@ import com.applemango.SteveJobda.domain.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class AdminServiceImpl implements AdminService {
 
@@ -12,10 +14,10 @@ public class AdminServiceImpl implements AdminService {
     AdminDao adminDao;
 
     @Override
-    public Admin getAdminByAdminSn(Integer adminSn) {
+    public List<Admin> getAllAdmins() {
         System.out.println("SERVICE");
-        Admin admin = adminDao.getAdminByAdminSn(adminSn);
-        System.out.println(admin);
-        return admin;
+        List<Admin> list = adminDao.getAllAdmins();
+        System.out.println(list);
+        return list;
     }
 }
