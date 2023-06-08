@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <properties resource="database_for_generator.properties"/>
+    <context id="context1" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <jdbcConnection driverClass="${jdbc.driverClassName}" connectionURL="${jdbc.url}" userId="${jdbc.username}"
+                        password="${jdbc.password}"/>
+
+        <javaModelGenerator
+                targetPackage="com.applemango.SteveJobda.domain"
+                targetProject="/MIDASIT/SteveJobda/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mybatis.mapper"
+                         targetProject="/MIDASIT/SteveJobda/src/main/resources"/>
+
+        <javaClientGenerator
+                targetPackage="com.applemango.SteveJobda.persistence.mapper"
+                targetProject="/MIDASIT/SteveJobda/src/main/java" type="XMLMAPPER"/>
+
+        <table tableName="admin"/>
+        <table tableName="img"/>
+        <table tableName="posting"/>
+        <table tableName="auth"/>
+        <table tableName="admin_auth"/>
+
+    </context>
+</generatorConfiguration>
