@@ -10,23 +10,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30a83888-8b8f-4080-af38-429119b64240" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SteveJobda_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/database_for_generator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/spring/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/spring/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/spring/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/spring/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/static/img/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dto/AdminDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/service/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/SteveJobda_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/SteveJobda_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminAuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminAuthMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AuthMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/ImgMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/ImgMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/PostingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/PostingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/spring/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/spring/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Img.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Img.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Posting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Posting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminAuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminAuthMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AuthMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/ImgMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/ImgMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/PostingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/PostingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminAuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminAuthMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AuthMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ImgMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ImgMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PostingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PostingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,14 +53,40 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1686194014" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1686194013" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -76,7 +119,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;a8c00d3924c87c2958a4e4e7cb8f870b&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -89,11 +132,12 @@
   <component name="RunManager">
     <configuration name="Tomcat 8.5.89" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.89" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="SteveJobda:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/SteveJobda_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -186,7 +230,10 @@
       <updated>1686185581102</updated>
       <workItem from="1686185582090" duration="5022000" />
       <workItem from="1686191141134" duration="1054000" />
-      <workItem from="1686192203358" duration="1670000" />
+      <workItem from="1686192203358" duration="9041000" />
+      <workItem from="1686205059098" duration="93000" />
+      <workItem from="1686205163031" duration="196000" />
+      <workItem from="1686205367929" duration="174000" />
     </task>
     <servers />
   </component>

@@ -3,5 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <!--    <typeAliases>-->
+    <!--        <typeAlias type="com.applemango.SteveJobda.domain.Admin" alias="admin"/>-->
+    <!--    </typeAliases>-->
+    <mappers>
+        <mapper class="com.applemango.SteveJobda.persistence.mapper.AdminMapper"/>
+    </mappers>
 
 </configuration>

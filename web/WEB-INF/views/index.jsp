@@ -13,6 +13,6 @@
 <body>
     <h3>${data}</h3>
     <div>안영</div>
-    <img src="/img/img1.png"/>
+<%--    <img src="/img/img1.png"/>--%>
 </body>
 </html>
