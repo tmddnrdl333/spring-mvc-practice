@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface AdminDao {
     public List<Admin> getAllAdmins();
+
+    public Admin getAdminByIdPw(String id, String pw);
 }

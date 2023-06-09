@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -26,15 +25,20 @@ public class AdminDaoImpl implements AdminDao {
 
     @Override
     public List<Admin> getAllAdmins() {
-        System.out.println("DAO");
-
         AdminExample example = new AdminExample();
         AdminExample.Criteria criteria = example.createCriteria();
-        criteria.andAdminSnEqualTo(1);
-        System.out.println(example);
+//        criteria.andAdminSnEqualTo(1);
         List<Admin> admins = adminMapper.selectByExample(example);
-        System.out.println(admins);
 
         return admins;
+    }
+
+    @Override
+    public Admin getAdminByIdPw(String id, String pw) {
+        AdminExample example = new AdminExample();
+        AdminExample.Criteria criteria = example.createCriteria();
+        criteria.andIdEqualTo(id).andPwEqualTo(pw);
+        Admin admin = adminMapper.selectByExample(example).get(0);
+        return admin;
     }
 }

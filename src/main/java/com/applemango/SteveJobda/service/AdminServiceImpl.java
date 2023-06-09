@@ -15,9 +15,12 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public List<Admin> getAllAdmins() {
-        System.out.println("SERVICE");
         List<Admin> list = adminDao.getAllAdmins();
-        System.out.println(list);
         return list;
+    }
+
+    @Override
+    public Admin loginCheck(String id, String pw) {
+        return adminDao.getAdminByIdPw(id,pw);
     }
 }

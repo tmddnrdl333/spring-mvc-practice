@@ -15,4 +15,12 @@
 
     <mvc:resources mapping="/**" location="/static/"/>
 
+
+<!--    <bean id="LoginInterceptor" class="com.applemango.SteveJobda.interceptor.LoginInterceptor"/>-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/member/**"/>
+            <bean id="LoginInterceptor" class="com.applemango.SteveJobda.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>
