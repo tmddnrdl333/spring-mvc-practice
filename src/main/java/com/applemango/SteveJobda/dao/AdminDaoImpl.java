@@ -14,30 +14,27 @@ import java.util.List;
 @Repository
 public class AdminDaoImpl implements AdminDao {
 
-    private static String namespace = "com.applemango.SteveJobda.persistence.mapper.AdminMapper";
+    private AdminMapper adminMapper;
 
     @Autowired
     private SqlSession sqlSession;
 
-    private AdminMapper adminMapper;
-
     @PostConstruct
-    public void init(){
+    public void init() {
         adminMapper = sqlSession.getMapper(AdminMapper.class);
     }
 
     @Override
     public List<Admin> getAllAdmins() {
         System.out.println("DAO");
-        //System.out.println(sqlSession.selectList(namespace+".selectAll"));
 
         AdminExample example = new AdminExample();
-        example.createCriteria()
-                .andAdminSnEqualTo(1);
+        AdminExample.Criteria criteria = example.createCriteria();
+        criteria.andAdminSnEqualTo(1);
+        System.out.println(example);
         List<Admin> admins = adminMapper.selectByExample(example);
+        System.out.println(admins);
 
-        //List<Admin> list = sqlSession.selectList(namespace + ".selectAll");
-        //System.out.println(list);
-        return new ArrayList<>();
+        return admins;
     }
 }

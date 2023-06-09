@@ -11,39 +11,38 @@
   <component name="ChangeListManager">
     <list default="true" id="30a83888-8b8f-4080-af38-429119b64240" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/dao/AdminDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/dao/AdminDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/dao/AdminDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/service/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/com/applemango/SteveJobda/service/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminAuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminAuthMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/AuthMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/ImgMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/ImgMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/PostingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/classes/mybatis/mapper/PostingMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/spring/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SteveJobda_war_exploded/WEB-INF/spring/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminAuth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Auth.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Img.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Posting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminAuthExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminAuthExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AdminExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AuthExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/AuthExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Img.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Img.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/ImgExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/ImgExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Posting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/Posting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/PostingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/PostingExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/PostingWithBLOBs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/domain/PostingWithBLOBs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminAuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminAuthMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AdminMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AuthMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/AuthMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/ImgMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/ImgMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/PostingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/persistence/mapper/PostingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/service/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/service/AdminServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminAuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminAuthMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AuthMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ImgMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ImgMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PostingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/PostingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,32 +101,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/MIDASIT/SteveJobda&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;a8c00d3924c87c2958a4e4e7cb8f870b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/MIDASIT/SteveJobda/src/main/java/com/applemango/SteveJobda/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "spring.configuration.checksum": "a8c00d3924c87c2958a4e4e7cb8f870b",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MIDASIT\SteveJobda\src\main\java\com\applemango\SteveJobda\test" />
+      <recent name="C:\MIDASIT\SteveJobda\libs\mysql\mysql-connector-j" />
       <recent name="C:\MIDASIT\SteveJobda\web\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MIDASIT\SteveJobda\libs\mysql\mysql-connector-j" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,7 +238,8 @@
       <workItem from="1686192203358" duration="9041000" />
       <workItem from="1686205059098" duration="93000" />
       <workItem from="1686205163031" duration="196000" />
-      <workItem from="1686205367929" duration="5736000" />
+      <workItem from="1686205367929" duration="6412000" />
+      <workItem from="1686267040686" duration="8034000" />
     </task>
     <servers />
   </component>
@@ -245,19 +250,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDaoImpl.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDaoImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/service/AdminServiceImpl.java</url>
           <line>17</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/applemango/SteveJobda/dao/AdminDaoImpl.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

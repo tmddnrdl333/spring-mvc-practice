@@ -4,7 +4,7 @@
 
 <generatorConfiguration>
     <properties resource="database_for_generator.properties"/>
-    <context id="context1" targetRuntime="MyBatis3">
+    <context id="SteveJobda" targetRuntime="MyBatis3">
 
         <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
         <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
