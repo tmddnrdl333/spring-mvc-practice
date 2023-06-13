@@ -18,4 +18,18 @@
     <bean id="swagger2Config" class="com.applemango.SteveJobda.config.SwaggerConfig"/>
     <mvc:resources location="classpath:/META-INF/resources/" mapping="swagger-ui.html"/>
     <mvc:resources location="classpath:/META-INF/resources/webjars/" mapping="/webjars/**"/>
+
+    <!-- interceptor -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/login"/>
+            <mvc:exclude-mapping path="/member/**"/>
+            <bean class="com.applemango.SteveJobda.interceptor.LoginInterceptor"/>
+            <!--            <mvc:exclude-mapping path=""/>-->
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/member/**"/>
+            <bean class="com.applemango.SteveJobda.interceptor.AuthInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>

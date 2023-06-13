@@ -14,4 +14,9 @@ public class AdminRequest {
         private String phone;
     }
 
+    @Getter
+    public static class LoginRequest {
+        private String id;
+        private String pw;
+    }
 }
