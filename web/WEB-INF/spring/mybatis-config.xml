@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <mappers>
+        <mapper class="com.applemango.SteveJobda.db.generate.dao.AdminAuthMapper"/>
+        <mapper class="com.applemango.SteveJobda.db.generate.dao.AdminMapper"/>
+        <mapper class="com.applemango.SteveJobda.db.generate.dao.AuthMapper"/>
+        <mapper class="com.applemango.SteveJobda.db.generate.dao.ImgMapper"/>
+        <mapper class="com.applemango.SteveJobda.db.generate.dao.PostingMapper"/>
+    </mappers>
+
+</configuration>
