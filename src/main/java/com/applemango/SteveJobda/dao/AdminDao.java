@@ -4,20 +4,20 @@ import com.applemango.SteveJobda.controller.response.AdminResponse;
 import com.applemango.SteveJobda.db.generate.dao.AdminMapper;
 import com.applemango.SteveJobda.db.generate.model.Admin;
 import com.applemango.SteveJobda.db.generate.model.AdminExample;
+import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.session.SqlSession;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
 
+@RequiredArgsConstructor
 @Repository
 public class AdminDao implements BaseDao<Admin> {
 
     private AdminMapper adminMapper;
 
-    @Autowired
-    private SqlSession sqlSession;
+    private final SqlSession sqlSession;
 
     @PostConstruct
     public void init() {
@@ -26,7 +26,7 @@ public class AdminDao implements BaseDao<Admin> {
 
     @Override
     public boolean create(Admin admin) {
-        return adminMapper.insert(admin) > 0;
+        return adminMapper.insertSelective(admin) > 0;
     }
 
     @Override
@@ -52,12 +52,26 @@ public class AdminDao implements BaseDao<Admin> {
 
         /* 조회되지 않는 경우 */
         if (admins.size() == 0) {
+            /* TODO: exception */
             return null;
         }
-        /* 조회되었음. (삭제되었어도 ID 중복되지 않아야 함.) */
         return admins.get(0);
     }
 
+    /* 탈퇴한 계정도 검사 */
+    public boolean isExistById(String id) {
+        AdminExample example = new AdminExample();
+        AdminExample.Criteria criteria = example.createCriteria();
+        criteria.andIdEqualTo(id);
+        List<Admin> admins = adminMapper.selectByExample(example);
+
+        if (admins.size() == 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /* 로그인 가능 여부를 알기 위함(탈퇴하지 않은 계정만) */
     public boolean isExistByIdAndPw(String id, String pw) {
         AdminExample example = new AdminExample();
         AdminExample.Criteria criteria = example.createCriteria();

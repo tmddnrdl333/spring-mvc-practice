@@ -9,6 +9,9 @@
 
     <context id="SteveJobda" targetRuntime="MyBatis3">
 
+        <plugin type="org.mybatis.generator.plugins.FluentBuilderMethodsPlugin"/>
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
         <jdbcConnection driverClass="${jdbc.driverClassName}"
                         connectionURL="${jdbc.url}"
                         userId="${jdbc.username}"

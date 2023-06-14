@@ -1,9 +1,12 @@
 package com.applemango.SteveJobda.util;
 
+import lombok.experimental.UtilityClass;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class encrypter {
+@UtilityClass
+public class Encrypter {
     public static String encrypt(String text) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("SHA-256");
         md.update(text.getBytes());

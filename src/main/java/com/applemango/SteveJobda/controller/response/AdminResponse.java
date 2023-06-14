@@ -5,7 +5,7 @@ import lombok.Getter;
 
 public class AdminResponse {
 
-    @Getter /* Getter가 있어야 ResponseBody에 json으로 보여주던데 */
+    @Getter
     @Builder
     public static class DetailResponse {
         private String id;

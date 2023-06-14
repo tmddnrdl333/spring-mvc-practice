@@ -14,20 +14,15 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        logger.info("login-interceptor preHandle called");
+        logger.info("LOGIN INTERCEPTOR PRE_HANDLE");
         HttpSession httpSession = request.getSession();
         if (httpSession.getAttribute(LOGIN) == null) {
-            logger.info("not logged in");
-//            response.sendRedirect(request.getContextPath() + "/login");
+            logger.info("NOT LOGGED IN, ATTEMPTING TO LOGIN.");
         } else {
-            logger.info("logged in already, clear login data before");
+            logger.info("LOGGED IN ALREADY, CLEARING LOGIN DATA.");
             httpSession.removeAttribute(LOGIN);
         }
         return true;
-    }
-
-    public void postHandle() {
-
     }
 
 }

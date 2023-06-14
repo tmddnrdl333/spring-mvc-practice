@@ -15,15 +15,15 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        logger.info("auth-interceptor preHandle called");
+        logger.info("AUTH INTERCEPTOR PRE_HANDLE");
         HttpSession httpSession = request.getSession();
-        String admin_id = (String) httpSession.getAttribute(LOGIN);
-        if (admin_id == null) { /* 실제로 db에 find 해서 조회되는지 & deletedYn 까지 확인해야 할까? */
-            logger.info("not logged in");
+        String adminId = (String) httpSession.getAttribute(LOGIN);
+        if (adminId == null) { /* 실제로 db에 find 해서 조회되는지 & deletedYn 까지 확인해야 할까? */
+            logger.info("NOT LOGGED IN, PLEASE LOG IN FIRST.");
             response.sendRedirect(request.getContextPath() + "/index"); /* index.jsp에서 로그인하도록 redirect */
             return false;
         }
-        logger.info("you are logged in, welcome");
+        logger.info("YOU ARE LOGGED IN, WELCOME.");
         return true;
     }
 }
