@@ -1,6 +1,5 @@
 package com.applemango.SteveJobda.controller;
 
-import com.applemango.SteveJobda.controller.response.UserResponse;
 import com.applemango.SteveJobda.controller.rqrs.UserDetailRs;
 import com.applemango.SteveJobda.controller.rqrs.UserLoginRq;
 import com.applemango.SteveJobda.controller.rqrs.UserSignupRq;
@@ -9,9 +8,11 @@ import io.swagger.annotations.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.security.NoSuchAlgorithmException;
 
 @Api(tags = {"UserController (사용자 관련 기능)"})
@@ -30,12 +31,12 @@ public class UserController {
     @ApiOperation(value = "회원가입")
     @PostMapping("signup")
     public ResponseEntity<String> signup(
-            @ApiParam(value = "회원가입에 필요한 정보") @RequestBody UserSignupRq request
+            @ApiParam(value = "회원가입에 필요한 정보") @RequestBody @Valid UserSignupRq request
     ) throws NoSuchAlgorithmException {
         if (userService.signup(request)) {
-            return ResponseEntity.status(HttpStatus.CREATED).body("회원가입에 성공하였습니다.");
+            return ResponseEntity.status(HttpStatus.CREATED).body("회원가입 성공");
         }
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("회원가입에 실패하였습니다.");
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("회원가입 실패");
     }
 
     @ApiResponses({
@@ -45,14 +46,14 @@ public class UserController {
     })
     @ApiOperation(value = "로그인")
     @PostMapping("login")
-    public ResponseEntity login(
-            @ApiParam(value = "로그인 아이디와 패스워드") @RequestBody UserLoginRq request,
+    public ResponseEntity<String> login(
+            @ApiParam(value = "로그인 아이디와 패스워드") @Valid @RequestBody UserLoginRq request,
             HttpSession httpSession
     ) throws NoSuchAlgorithmException {
         if (userService.login(request, httpSession)) {
-            return ResponseEntity.status(HttpStatus.OK).body("로그인에 성공하였습니다.");
+            return ResponseEntity.status(HttpStatus.OK).body("로그인 성공");
         }
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("로그인에 실패하였습니다.");
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("로그인 실패");
     }
 
     @ApiResponses({
@@ -60,9 +61,9 @@ public class UserController {
     })
     @ApiOperation(value = "로그아웃")
     @GetMapping("logout")
-    public ResponseEntity logout(HttpSession httpSession) {
+    public ResponseEntity<Void> logout(HttpSession httpSession) {
         userService.logout(httpSession);
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
+        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 
 
@@ -72,9 +73,9 @@ public class UserController {
     })
     @ApiOperation(value = "내 정보 조회")
     @GetMapping("user/my-info")
-    public ResponseEntity myInfo(HttpSession httpSession) {
+    public ResponseEntity<UserDetailRs> myInfo(HttpSession httpSession) {
         String id = (String) httpSession.getAttribute("login");
-        UserResponse.DetailResponse response = userService.findUserById(id);
+        UserDetailRs response = userService.findUserById(id);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 

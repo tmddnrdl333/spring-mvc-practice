@@ -1,6 +1,6 @@
 package com.applemango.SteveJobda.dao;
 
-import com.applemango.SteveJobda.controller.response.UserResponse;
+import com.applemango.SteveJobda.controller.rqrs.UserDetailRs;
 import com.applemango.SteveJobda.db.generate.dao.UserMapper;
 import com.applemango.SteveJobda.db.generate.model.User;
 import com.applemango.SteveJobda.db.generate.model.UserExample;
@@ -50,9 +50,7 @@ public class UserDao implements BaseDao<User> {
         criteria.andIdEqualTo(id);
         List<User> users = userMapper.selectByExample(example);
 
-        /* 조회되지 않는 경우 */
         if (users.size() == 0) {
-            /* TODO: exception */
             return null;
         }
         return users.get(0);
@@ -91,9 +89,9 @@ public class UserDao implements BaseDao<User> {
         return true;
     }
 
-    public UserResponse.DetailResponse test(Integer user_sn) {
+    public UserDetailRs test(Integer user_sn) {
         User user = userMapper.selectByPrimaryKey(user_sn);
-        return UserResponse.DetailResponse.builder()
+        return UserDetailRs.builder()
                 .id(user.getId())
                 .name(user.getName())
                 .team(user.getTeam())

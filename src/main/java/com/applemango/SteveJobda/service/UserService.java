@@ -1,17 +1,17 @@
 package com.applemango.SteveJobda.service;
 
-import com.applemango.SteveJobda.controller.response.UserResponse;
+import com.applemango.SteveJobda.controller.rqrs.UserDetailRs;
 import com.applemango.SteveJobda.controller.rqrs.UserLoginRq;
 import com.applemango.SteveJobda.controller.rqrs.UserSignupRq;
 import com.applemango.SteveJobda.dao.UserDao;
 import com.applemango.SteveJobda.db.generate.model.User;
 import com.applemango.SteveJobda.exception.DuplicateIdException;
-import com.applemango.SteveJobda.exception.InvalidValueException;
 import com.applemango.SteveJobda.exception.PasswordNotMatchException;
 import com.applemango.SteveJobda.util.EncryptionUtil;
-import com.applemango.SteveJobda.util.RegexUtil;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import javax.servlet.http.HttpSession;
 import java.security.NoSuchAlgorithmException;
@@ -35,12 +35,8 @@ public class UserService {
      */
     public boolean signup(UserSignupRq request) throws NoSuchAlgorithmException {
 
-        if (!RegexUtil.checkId(request.getId())) {
-            throw new InvalidValueException("ID");
-        } else if (!request.getPassword().equals(request.getPasswordCheck())) {
+        if (!request.getPassword().equals(request.getPasswordCheck())) {
             throw new PasswordNotMatchException();
-        } else if (!RegexUtil.checkPassword(request.getPassword())) {
-            throw new InvalidValueException("PASSWORD");
         }
         if (userDao.isExistById(request.getId())) {
             throw new DuplicateIdException();
@@ -86,9 +82,10 @@ public class UserService {
         httpSession.invalidate();
     }
 
-    public UserResponse.DetailResponse findUserById(String id) {
+    public UserDetailRs findUserById(String id) {
         User user = userDao.findById(id);
-        return UserResponse.DetailResponse.builder()
+        if (user == null) throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "아이디가 변경되었습니다.");
+        return UserDetailRs.builder()
                 .id(user.getId())
                 .name(user.getName())
                 .team(user.getTeam())
