@@ -33,15 +33,17 @@
 
     <!-- Interceptor -->
     <mvc:interceptors>
-        <!-- 로그인할 때 -->
         <mvc:interceptor>
-            <mvc:mapping path="/home/login"/>
+            <mvc:mapping path="/login"/>
             <bean class="com.applemango.SteveJobda.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
-        <!-- 로그인한 회원만 접근 가능한 경로 -->
         <mvc:interceptor>
-            <mvc:mapping path="/admin/**"/>
-            <bean class="com.applemango.SteveJobda.interceptor.AuthInterceptor"/>
+            <mvc:mapping path="/user/**"/>
+            <bean class="com.applemango.SteveJobda.interceptor.AuthenticationInterceptor"/>
         </mvc:interceptor>
+        <!--        <mvc:interceptor>-->
+        <!--            <mvc:mapping path="??"/>-->
+        <!--            <bean class="com.applemango.SteveJobda.interceptor.AuthorizationInterceptor"/>-->
+        <!--        </mvc:interceptor>-->
     </mvc:interceptors>
 </beans>

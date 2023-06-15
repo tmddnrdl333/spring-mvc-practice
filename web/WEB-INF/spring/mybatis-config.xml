@@ -4,9 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+        <settings>
+            <setting name="useGeneratedKeys" value="true"/>
+        </settings>
+
     <mappers>
-        <mapper class="com.applemango.SteveJobda.db.generate.dao.AdminAuthMapper"/>
-        <mapper class="com.applemango.SteveJobda.db.generate.dao.AdminMapper"/>
+        <mapper class="com.applemango.SteveJobda.db.generate.dao.UserAuthMapper"/>
+        <mapper class="com.applemango.SteveJobda.db.generate.dao.UserMapper"/>
         <mapper class="com.applemango.SteveJobda.db.generate.dao.AuthMapper"/>
         <mapper class="com.applemango.SteveJobda.db.generate.dao.ImgMapper"/>
         <mapper class="com.applemango.SteveJobda.db.generate.dao.PostingMapper"/>

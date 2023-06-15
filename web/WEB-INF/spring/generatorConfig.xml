@@ -34,8 +34,9 @@
                 targetPackage="com.applemango.SteveJobda.db.generate.dao"
                 targetProject="./src/main/java" type="XMLMAPPER"/>
 
-        <table tableName="admin" domainObjectName="Admin">
+        <table tableName="user" domainObjectName="User">
             <property name="runtimeSchema" value=""/>
+            <generatedKey column="user_sn" sqlStatement="MySql" identity="true"/>
         </table>
         <table tableName="img" domainObjectName="Img">
             <property name="runtimeSchema" value=""/>
@@ -46,7 +47,7 @@
         <table tableName="auth" domainObjectName="Auth">
             <property name="runtimeSchema" value=""/>
         </table>
-        <table tableName="admin_auth" domainObjectName="AdminAuth">
+        <table tableName="user_auth" domainObjectName="UserAuth">
             <property name="runtimeSchema" value=""/>
         </table>
 
